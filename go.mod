@@ -15,4 +15,5 @@ require (
 	golang.org/x/sys v0.18.0 // indirect
 )
 
+// licenseclassifier fork contains changes embed the license files from the repo
 replace github.com/google/licenseclassifier => github.com/bugfender-contrib/licenseclassifier v0.0.0-20240327184334-06ecb676fbdc
