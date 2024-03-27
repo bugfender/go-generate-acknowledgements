@@ -49,3 +49,9 @@ licenseoverrides:
       version: v1.2.0
     spdx: CC0-1.0
 ```
+
+# Support
+
+This tool is open source and free to use (see `LICENSE`). We do not provide support.
+
+We may implement new features, but we will likely only implement features that we need. If you'd like to contribute, check `CONTRIBUTING.md`.
