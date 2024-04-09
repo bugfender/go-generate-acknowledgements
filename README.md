@@ -6,7 +6,7 @@ This tool parses the given `go.mod` files and uses `github.com/google/licensecla
 ## Installation
 
 ```shell
-go install github.com/bugfender/go-generate-acknowledgements
+go install github.com/bugfender/go-generate-acknowledgements@latest
 ```
 
 ## Usage
