@@ -21,5 +21,6 @@
 go.work
 
 .idea
+build
 go-generate-acknowledgements
 example-config.yaml

@@ -16,8 +16,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/licenseclassifier"
-	"github.com/google/licenseclassifier/licenses"
+	"github.com/bugfender-contrib/licenseclassifier"
+	"github.com/bugfender-contrib/licenseclassifier/licenses"
 	"github.com/rogpeppe/go-internal/module"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/mod/modfile"
