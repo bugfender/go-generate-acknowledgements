@@ -2,12 +2,13 @@ package main
 
 import (
 	"errors"
-	"github.com/rogpeppe/go-internal/module"
-	"gopkg.in/yaml.v3"
 	"io/fs"
 	"log"
 	"os"
 	"path"
+
+	"golang.org/x/mod/module"
+	"gopkg.in/yaml.v3"
 )
 
 type Config struct {
