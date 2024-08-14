@@ -18,13 +18,13 @@ import (
 
 	"github.com/bugfender-contrib/licenseclassifier"
 	"github.com/bugfender-contrib/licenseclassifier/licenses"
-	"github.com/rogpeppe/go-internal/module"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/mod/modfile"
+	"golang.org/x/mod/module"
 )
 
 func init() {
-	http.DefaultClient.Timeout = 1 * time.Minute
+	http.DefaultClient.Timeout = 2 * time.Minute
 }
 
 func usage() {
@@ -84,7 +84,7 @@ func main() {
 		// classify license
 		m := classifier.NearestMatch(licenseclassifier.TrimExtraneousTrailingText(license))
 		if !slices.Contains(config.AllowedLicenses, m.Name) {
-			fmt.Printf("Module: %s %s, has forbidden license type: %s\n", info.Path, info.Version, m.Name)
+			log.Printf("Module: %s %s, has forbidden license type: %s\n", info.Path, info.Version, m.Name)
 			os.Exit(2)
 		}
 	}
